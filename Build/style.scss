@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@keyframes name {
+    0%{
+       opacity: 0;
+    }
+    // 25%{
+    //    opacity: 0.25;
+    // }
+    // 50%{
+    //     opacity: 0.5;
+    // }
+    // 75%{
+    //     opacity: 0.75;
+    // }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes love {
+    0%{
+       opacity: 0;
+    }
+    25%{
+       opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+main{
+    .i{
+        display: flex;
+        justify-content: center;
+        padding: 150px 0;
+        background: linear-gradient(to right, #C02425, #F0CB35);
+        h1{
+            font-family: 'Gowun Dodum', sans-serif;
+            font-size: 60px;
+            color: #ffffff;
+            animation-name: name;
+            animation-delay: 0ms;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+    }
+    .you{
+        display: flex;
+        justify-content: center;
+        padding: 150px 0;
+        background: linear-gradient(to right, #C02425, #F0CB35);
+        h1{
+            transition: 1s ease;
+            font-size: 60px;
+            color: #ffffff;
+            animation-name: you;
+            animation-delay: 0ms;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes you {
+            0%{
+               opacity: 0;
+            }
+            25%{
+               opacity: 0.25;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            75%{
+                opacity: 0.75;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    .love{
+        border: none;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        padding: 150px 0;
+        background: linear-gradient(to right, #C02425, #F0CB35);
+        h1{
+            font-size: 60px;
+            color: #ffffff;
+            animation: love;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            transition: 4s ease;
+        }
+        // @keyframes love {
+        //     0%{
+        //         font-size: 10px;
+        //     }
+        //     10%{
+        //         font-size: 15px;
+        //     }
+        //     20%{
+        //         font-size: 20px;
+        //     }
+        //     30%{
+        //         font-size: 25px;
+        //     }
+        //     40%{
+        //         font-size: 30px;
+        //     }
+        //     50%{
+        //         font-size: 35px;
+        //     }
+        //     60%{
+        //         font-size: 40px;
+        //     }
+        //     70%{
+        //         font-size: 45px;
+        //     }
+        //     80%{
+        //         font-size: 50px;
+        //     }
+        //     90%{
+        //         font-size: 55px;
+        //     }
+        //     100%{
+        //         font-size: 56px;
+        //     }
+        // }
+    }
+    .my_heart{
+        display: flex;
+        justify-content: center;
+        padding: 170px 0;
+        padding-bottom: 200px;
+        background: linear-gradient(to right, #C02425, #F0CB35);
+        h1{
+            font-size: 40px;
+            color: #ffffff;
+        }
+    }
+}
+.for_love{
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(to right, #C02425, #F0CB35);
+    background-repeat: no-repeat;
+    .my_love{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.our_gallery{
+    padding-top: 100px;
+    position: absolute;
+    background: url("./assets/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    .row{
+        .col-md-3{
+            img{
+                width: 100%;
+                height: 90%;
+            }
+        }
+    }
+}
